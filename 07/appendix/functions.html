@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        // Calculation of After Tax Income of a person
+        // Person's gross income
+        // Tax Rate: 17.5%
+        // tax amount = income * tax rate
+        // After tax income = Gross income - tax amount
+
+        var taxRate = 18.5;
+
+
+
+        // var afterTaxIncome = calculateAfterTaxIncome("John Doe", 100000);
+
+        // calculateAfterTaxIncome("John Doe", 100000);
+        // calculateAfterTaxIncome("Jane Doe", 80000);
+
+        console.log("After tax income of John Doe:" + calculateAfterTaxIncome("John Doe", 100000));
+
+        var sum = function(){
+            console.log("Here's the sum!!!");
+        }
+
+        sum();
+
+        function calculateAfterTaxIncome(personName, personGrossIncome) {
+            var taxAmount = personGrossIncome * taxRate / 100;
+            var afterTaxIncome = personGrossIncome - taxAmount;
+
+
+            function someFunction() {
+                console.log("Tax Amount:", taxAmount);
+            }
+
+            someFunction();
+
+            console.log("After tax income " + personName, afterTaxIncome);
+
+            return afterTaxIncome;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
