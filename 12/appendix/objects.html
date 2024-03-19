@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      var personOne = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 18,
+        address: {
+          city: "Lahore",
+          province: "Punjab",
+          country: "Pakistan",
+        },
+        walk() {
+          console.log(" Person One is now walking.");
+        },
+      };
+
+      console.log(personOne.age);
+      personOne.walk();
+      personOne.lastName = "Edited Last Name";
+      console.log(personOne);
+      personOne.email = "john@gmail.com";
+      console.log(personOne);
+
+      var personTwo = {
+        firstName: "Jane",
+        lastName: "Doe",
+        age: 24,
+        address: {
+          city: "Lahore",
+          province: "Punjab",
+          country: "Pakistan",
+        },
+        walk() {
+          console.log(" Person Two is now walking.");
+        },
+      };
+      console.log(personTwo);
+      console.log(personTwo["address"].city);
+      console.warn("Hi this is a warning");
+
+      document.body.style.background = "yellow";
+    </script>
+  </body>
+</html>

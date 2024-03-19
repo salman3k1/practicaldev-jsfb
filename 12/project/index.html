@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/properteez-favicon.jpg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Properteez | PracticalDev</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/custom-styles.css" />
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8">
+            <ul class="info">
+              <li><i class="fa fa-envelope"></i> info@properteez.com</li>
+              <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/properteez-logo.png" alt="Logo image" />
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- Sign-in tigger  -->
+              <a class="sign-in-link" href="#">Sign In</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div class="home-page-filters">
+      <div class="container">
+        <form class="filters-form" action="" method="post">
+          <a class="reset-filter-button reset-all-button" href="#"
+            ><i class="fa fa-clock-rotate-left"></i
+          ></a>
+          <a class="goto-results-button" href="#properties-section"
+            ><i class="fa fa-arrow-down"></i
+          ></a>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <fieldset>
+                <div class="label-with-input-value">
+                  <div>
+                    <label for="filterBedrooms">Bedrooms</label>
+                    <a class="reset-filter-button" href="#"
+                      ><i class="fa fa-clock-rotate-left"></i
+                    ></a>
+                  </div>
+                  <input
+                    type="text"
+                    class="value-placeholder"
+                    placeholder=""
+                    readonly
+                    value="0"
+                  />
+                </div>
+                <input
+                  id="filterBedrooms"
+                  name="bedrooms"
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="10"
+                  step="1"
+                />
+              </fieldset>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <fieldset>
+                <div class="label-with-input-value">
+                  <div>
+                    <label for="filterBathrooms">Bathrooms</label>
+                    <a class="reset-filter-button" href="#"
+                      ><i class="fa fa-clock-rotate-left"></i
+                    ></a>
+                  </div>
+                  <input
+                    type="text"
+                    class="value-placeholder"
+                    placeholder=""
+                    readonly
+                    value="0"
+                  />
+                </div>
+                <input
+                  id="filterBathrooms"
+                  name="bathrooms"
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="10"
+                  step="1"
+                />
+              </fieldset>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <fieldset>
+                <div>
+                  <label for="filterMinArea"
+                    >Minimum Area (m<sup>2</sup>)</label
+                  >
+                  <a class="reset-filter-button" href="#"
+                    ><i class="fa fa-clock-rotate-left"></i
+                  ></a>
+                </div>
+                <input
+                  id="filterMinArea"
+                  type="number"
+                  name="minArea"
+                  placeholder="Any"
+                  min="0"
+                />
+              </fieldset>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <fieldset>
+                <div>
+                  <label for="filterMaxArea"
+                    >Maximum Area (m<sup>2</sup>)</label
+                  >
+                  <a class="reset-filter-button" href="#"
+                    ><i class="fa fa-clock-rotate-left"></i
+                  ></a>
+                </div>
+                <input
+                  id="filterMaxArea"
+                  type="number"
+                  name="maxArea"
+                  placeholder="Any"
+                  min="0"
+                />
+              </fieldset>
+            </div>
+            <div class="col-sm-12">
+              <div class="properties-filter property-types-radio">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="type"
+                  id="filterPropertyTypeAll"
+                  value="All"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-secondary" for="filterPropertyTypeAll"
+                  >Show All</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="type"
+                  id="filterPropertyTypeVilla"
+                  value="Luxury Villa"
+                  autocomplete="off"
+                />
+                <label class="btn btn-secondary" for="filterPropertyTypeVilla"
+                  >Luxury Villa</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="type"
+                  id="filterPropertyTypePenthouse"
+                  value="Penthouse"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-secondary"
+                  for="filterPropertyTypePenthouse"
+                  >Penthouse</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="type"
+                  id="filterPropertyTypeApartment"
+                  value="Apartment"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-secondary"
+                  for="filterPropertyTypeApartment"
+                  >Apartment</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="type"
+                  id="filterPropertyTypeCondo"
+                  value="Modern Condo"
+                  autocomplete="off"
+                />
+                <label class="btn btn-secondary" for="filterPropertyTypeCondo"
+                  >Modern Condo</label
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="properties-section" class="section properties">
+      <div class="container">
+        <button
+          id="add-property-button"
+          class="main-action-button btn btn-secondary d-block ms-auto mb-4"
+        >
+          Add New<i class="fa fa-plus ms-1"></i>
+        </button>
+        <div id="properties-box" class="row properties-box"></div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="pagination">
+              <li><a href="#">1</a></li>
+              <li><a class="is_active" href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">>></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 PracticalDev</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme-custom.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/property.js"></script>
+    <script src="assets/js/properties.js"></script>
+  </body>
+</html>
