@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditionals</title>
+  </head>
+  <body>
+    <script>
+      if (true) {
+        console.log("I was executed");
+      }
+
+      // Comparison Operators
+      var age = 18;
+
+      // === Equal to with type check
+      console.log(age + " === 18", age === 18);
+
+      // == Equal to without type check
+      console.log(age + " == '18'", age == "18");
+
+      // !== Not Equal to with type check
+      console.log(age + " !== 18", age !== 18);
+
+      // != Not Equal to without type check
+      console.log(age + " != '18'", age != "18");
+
+      // > Greater than
+      console.log(age + " > 20", age > 20);
+
+      // < Less than
+      console.log(age + " < 20", age < 20);
+
+      // >= Greater than or equal to
+      console.log(age + " >= 16", age >= 16);
+
+      // <= Less than or equal to
+      console.log(age + " <= 16", age <= 16);
+
+      // Determine if a person is adult or not
+      // A person is considered adult if their age is greater than or equal to 18
+
+      var personAge = 24;
+
+      if (personAge >= 18) {
+        console.log("The person is an adult");
+      } else {
+        console.log("The person is not an adult");
+      }
+
+      // Determine which age group does a person fall in
+      // There are going to be three age groups
+      // Group One: 0 - 18
+      // Group Two: 19 - 60
+      // Group Three: 60+
+
+      if (personAge <= 18) {
+        console.log("The person falls in Group One");
+      } else if (personAge <= 60) {
+        console.log("The person falls in Group Two");
+      } else {
+        console.log("The person falls in Group Three");
+      }
+
+      // Find the greatest of three numbers num1, num2 and num3.
+      // Assumption: All three numbers will be different from each other.
+
+      var num1 = 100;
+      var num2 = 20;
+      var num3 = 3;
+
+      if (num1 > num2) {
+        // If num1 is greater than num2, then we need to find out
+        // if it is also greater than num3. If so it is the greatest number.
+        // Otherwise since num1 is greater than num2,
+        // and num3 is greater than num1, then definitely num3 is the greatest.
+        if (num1 > num3) {
+          console.log("num1 is the greatest.");
+        } else {
+          console.log("num3 is the greatest.");
+        }
+      } else if (num2 > num3) {
+        console.log("num2 is the greatest.");
+      } else {
+        console.log("num3 is the greatest.");
+      }
+
+      // Logical Operators
+      // && AND
+      console.log("true && true:", true && true);
+      console.log("true && false:", true && false);
+      console.log("false && true:", false && true);
+      console.log("false && false:", false && false);
+
+      // || OR
+      console.log("true || true:", true || true);
+      console.log("true || false:", true || false);
+      console.log("false || true:", false || true);
+      console.log("false || false:", false || false);
+
+      // ! NOT
+      // For example if a user fills a form on your website
+      // And you check that data to populate a field named as isValid
+      // In case you want to show user an error that the data provided
+      // is invalid. You can leverage the isValid variable and
+      // revert its result using the NOT operator like so.
+      // if(!isValid) { console.log('Data is invalid.')}
+      console.log("!true :", !true);
+      console.log("!false :", !false);
+
+      // Order of Precedence of Logical Operators
+      // NOT -> 1st
+      // AND -> 2nd
+      // OR -> 3rd
+      console.log("(true || true) && !false:", (true || true) && !false);
+
+      num1 = 100;
+      num2 = 200;
+      num3 = 300;
+
+      if (num1 > num2 && num1 > num3) {
+        console.log("num1 is the greatest.");
+      } else if (num2 > num1 && num2 > num3) {
+        console.log("num2 is the greatest.");
+      } else {
+        console.log("num3 is the greatest.");
+      }
+
+      // Ternary Operator
+      // boolean ? code to be executed on true : code to be executed on false
+      var isValid = true;
+      var message = isValid ? "Data is valid" : "Error. The data is invalid.";
+      console.log(message);
+
+      // Switch Statements
+      /*
+          switch(value){
+            case value1:
+              console.log("Matched value 1");
+              break;
+            case value2:
+              console.log("Matched value 1");
+              break;
+            case value3:
+              console.log("Matched value 1");
+              break;
+            default:
+              console.log("No value matched");
+          }
+
+      */
+
+      var messageCode = "02";
+      switch (messageCode) {
+        case "01":
+          console.log("This is Message 1");
+          break;
+        case "02":
+          console.log("This is Message 2");
+          break;
+        case "03":
+          console.log("This is Message 3");
+          break;
+        default:
+          console.log("Message not recognized");
+      }
+
+      // Truthy and Falsy values
+      // ============================
+
+      // Falsy Values:
+      // ----------------
+      // 0, -0 and 0n
+      // "", '' (empty strings)
+      // null, undefined and NaN
+      // document.all
+
+      if ({}) {
+        console.log("Statement is true");
+      }
+    </script>
+  </body>
+</html>

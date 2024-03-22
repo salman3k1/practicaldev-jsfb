@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      var arr1 = [];
+      //   arr1.push(1);
+      //   arr1.push(2);
+      //   arr1.push(3);
+      //   arr1.push(4);
+      //   arr1.push(5);
+
+      /*
+          For Loop
+          ---------
+          for (initialization; condition; afterthought) {
+              code block
+          }
+        */
+
+      for (var num = -10, x = 0; num <= 10; num += 2, x++) {
+        arr1.push(num);
+        console.log(x);
+      }
+      console.log(arr1);
+
+      var matrix = [];
+      for (var x = 0; x < 10; x++) {
+        var arr2 = [];
+        for (var num = 1; num <= 10; num++) {
+          arr2.push(num);
+        }
+        matrix.push(arr2);
+      }
+      console.log(matrix);
+
+      /*
+          While Loop
+          ---------
+          while (condition) {
+              code block
+          }
+        */
+
+      var x = 0;
+      while (x < 10) {
+        console.log(x);
+        x++;
+      }
+
+      // Returns a random integer from 0 to 10:
+      // Math.floor(Math.random() * 11);
+      var randomNumber = Math.floor(Math.random() * 11);
+      var attemptCount = 1;
+      while (randomNumber !== 9) {
+        console.log("Random number: ", randomNumber);
+        console.log("Attemp count: ", attemptCount);
+        randomNumber = Math.floor(Math.random() * 11);
+        attemptCount++;
+      }
+      console.log("Random number: ", randomNumber);
+      console.log("Attemp count: ", attemptCount);
+
+      // break
+
+      var fruits = ["apple", "mango", "banana", "guava", "peach"];
+      var fruitIndex = -1;
+      var searchQuery = "mango";
+
+      for (var i = 0; i < fruits.length; i++) {
+        if (fruits[i] === searchQuery) {
+          fruitIndex = i;
+          console.log("Found our fruit!");
+          break;
+        }
+        console.log("Current index: ", i);
+      }
+
+      console.log("Fruit index: ", fruitIndex);
+
+      // continue
+      for (var i = 0; i < fruits.length; i++) {
+        if (fruits[i] === "banana") {
+          continue;
+        }
+
+        console.log(fruits[i]);
+      }
+
+      // Foreach
+
+      fruits.forEach(function (val, index) {
+        console.log(val, index);
+      });
+    </script>
+  </body>
+</html>
