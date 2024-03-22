@@ -1,10 +1,10 @@
 # practicaldev-jsfb
 
-Project files for my **JavaScript for Beginners in Hindi/Urdu** course hosted on YouTube. The video course can be found at [this link.](https://www.youtube.com/playlist?list=PLZhx23Giz5KSeoCgCqLpTkPmuhKON-kW4) Each numbered file in this project corresponds to the similarly numbered video in the course.
+Project files for my **JavaScript for Beginners** course. Each numbered file in this project corresponds to the similarly numbered video in the course.
 
 ## Course Description
 
-This project-based course, **narrated in Hindi/Urdu**, is designed to provide you with a comprehensive understanding of JavaScript while building a real estate property listing application from scratch. In this course, we will be building a real estate property listing application that will be a single-page application integrated with Firestore database and authentication. This application will have CRUD (Create, Read, Update, Delete) functionality related to property listing items, accessible only to an admin user. We'll start this course from the very basics and will end up with a complete single-page application. Throughout the course, we'll delve into various fundamental concepts and advanced features of JavaScript, enabling you to create dynamic and interactive web applications.
+This project-based course, is designed to provide you with a comprehensive understanding of JavaScript while building a real estate property listing application from scratch. In this course, we will be building a real estate property listing application that will be a single-page application integrated with Firestore database and authentication. This application will have CRUD (Create, Read, Update, Delete) functionality related to property listing items, accessible only to an admin user. We'll start this course from the very basics and will end up with a complete single-page application. Throughout the course, we'll delve into various fundamental concepts and advanced features of JavaScript, enabling you to create dynamic and interactive web applications.
 
 ## Course Highlights
 
