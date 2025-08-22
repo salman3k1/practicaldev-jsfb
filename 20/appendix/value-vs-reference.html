@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Value vs Reference</title>
+  </head>
+  <body>
+    <script>
+      /* Primitive data types such as 
+         string, number, null, undefined, and boolean, 
+         are passed by value
+      */
+      var a = "Some Text";
+      var b = a;
+      b += " Appended";
+      console.log(a, b);
+
+      /* Non-primitive data types such as 
+         objects, arrays, and functions
+         are passed by reference
+      */
+      var x = {
+        name: "John",
+      };
+      var y = x;
+      y.name = "Jane";
+      console.log(x, y);
+
+      /* Will always return false since we are 
+         creating two different objects and hence
+         comparing two different references
+      */
+      //   console.log(
+      //     {
+      //       name: "John",
+      //     } ===
+      //       {
+      //         name: "John",
+      //       }
+      //   );
+
+      console.log(x === y);
+    </script>
+  </body>
+</html>
